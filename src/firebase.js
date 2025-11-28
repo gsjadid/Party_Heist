@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
+import { getAuth, signInAnonymously } from "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyCbWP3PMOwjH4QNlIMjPOsL4TPzm-dx55k",
@@ -14,9 +15,16 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
+
+// Sign in anonymously immediately
+signInAnonymously(auth).catch((error) => {
+    console.error("Error signing in anonymously:", error);
+});
+
 let analytics;
 if (typeof window !== 'undefined') {
     analytics = getAnalytics(app);
 }
 
-export { db, analytics };
+export { db, analytics, auth };

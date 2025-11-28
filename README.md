@@ -2,7 +2,7 @@
 
 **Imposter** is a real-time social deduction game built for the web. Gather your friends, join a room, and try to find out who among you is the Imposter—or bluff your way to victory if it's you!
 
-![Game Screenshot](https://via.placeholder.com/800x400?text=Imposter+Game+Screenshot)
+![Game Screenshot](assets/screenshot.png)
 
 ## 🎮 What does this project do?
 This application allows a group of players to join a shared game room from their own devices.

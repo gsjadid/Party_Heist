@@ -1,0 +1,125 @@
+﻿
+> imposter@0.0.0 lint
+> eslint .
+
+
+D:\WebDev Projects\Imposter\scripts\bot_manager.js
+   6:14  error  'process' is not defined  no-undef
+  12:5   error  'process' is not defined  no-undef
+  44:17  error  'process' is not defined  no-undef
+
+D:\WebDev Projects\Imposter\src\App.jsx
+  13:27  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\WebDev Projects\Imposter\src\components\CluePhase.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\WebDev Projects\Imposter\src\components\DiscussionPhase.jsx
+   5:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                 no-unused-vars
+  19:37  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render   react-hooks/rules-of-hooks
+  21:5   error  React Hook "useEffect" is called conditionally. React Hooks must be called in the exact same order in every component render  react-hooks/rules-of-hooks
+  47:37  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render   react-hooks/rules-of-hooks
+  48:26  error  React Hook "useGame" is called conditionally. React Hooks must be called in the exact same order in every component render    react-hooks/rules-of-hooks
+
+D:\WebDev Projects\Imposter\src\components\Home.jsx
+  9:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\WebDev Projects\Imposter\src\components\Lobby.jsx
+  1:10  error  'useState' is defined but never used. Allowed unused vars must match /^[A-Z_]/u    no-unused-vars
+  3:10  error  'joinRoom' is defined but never used. Allowed unused vars must match /^[A-Z_]/u    no-unused-vars
+  3:20  error  'createRoom' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\WebDev Projects\Imposter\src\components\LobbyView.jsx
+  6:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\WebDev Projects\Imposter\src\components\OutcomeSelection.jsx
+   5:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                               no-unused-vars
+  15:41  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?  react-hooks/rules-of-hooks
+
+D:\WebDev Projects\Imposter\src\components\Resolution.jsx
+    5:10   error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         no-unused-vars
+   97:51   error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+   95 |                         <motion.div
+   96 |                             key={i}
+>  97 |                             initial={{ y: -50, x: Math.random() * 400, rotate: 0 }}
+      |                                                   ^^^^^^^^^^^^^ Cannot call impure function
+   98 |                             animate={{ y: 900, rotate: 720 }}
+   99 |                             transition={{ duration: 3 + Math.random() * 2, repeat: Infinity, delay: Math.random() * 3, ease: "linear" }}
+  100 |                             className={`absolute w-4 h-4 rounded-sm opacity-80 ${['bg-yellow-400', 'bg-pink-500', 'bg-cyan-400', 'bg-white'][Math.floor(Math.random() * 4)]}`}                                                                               react-hooks/purity
+   99:57   error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+   97 |                             initial={{ y: -50, x: Math.random() * 400, rotate: 0 }}
+   98 |                             animate={{ y: 900, rotate: 720 }}
+>  99 |                             transition={{ duration: 3 + Math.random() * 2, repeat: Infinity, delay: Math.random() * 3, ease: "linear" }}
+      |                                                         ^^^^^^^^^^^^^ Cannot call impure function
+  100 |                             className={`absolute w-4 h-4 rounded-sm opacity-80 ${['bg-yellow-400', 'bg-pink-500', 'bg-cyan-400', 'bg-white'][Math.floor(Math.random() * 4)]}`}
+  101 |                             style={{ left: Math.random() * 100 + '%' }}
+  102 |                         />                                              react-hooks/purity
+   99:101  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+   97 |                             initial={{ y: -50, x: Math.random() * 400, rotate: 0 }}
+   98 |                             animate={{ y: 900, rotate: 720 }}
+>  99 |                             transition={{ duration: 3 + Math.random() * 2, repeat: Infinity, delay: Math.random() * 3, ease: "linear" }}
+      |                                                                                                     ^^^^^^^^^^^^^ Cannot call impure function
+  100 |                             className={`absolute w-4 h-4 rounded-sm opacity-80 ${['bg-yellow-400', 'bg-pink-500', 'bg-cyan-400', 'bg-white'][Math.floor(Math.random() * 4)]}`}
+  101 |                             style={{ left: Math.random() * 100 + '%' }}
+  102 |                         />  react-hooks/purity
+  100:153  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+   98 |                             animate={{ y: 900, rotate: 720 }}
+   99 |                             transition={{ duration: 3 + Math.random() * 2, repeat: Infinity, delay: Math.random() * 3, ease: "linear" }}
+> 100 |                             className={`absolute w-4 h-4 rounded-sm opacity-80 ${['bg-yellow-400', 'bg-pink-500', 'bg-cyan-400', 'bg-white'][Math.floor(Math.random() * 4)]}`}
+      |                                                                                                                                                         ^^^^^^^^^^^^^ Cannot call impure function
+  101 |                             style={{ left: Math.random() * 100 + '%' }}
+  102 |                         />
+  103 |                     ))}          react-hooks/purity
+  101:44   error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+   99 |                             transition={{ duration: 3 + Math.random() * 2, repeat: Infinity, delay: Math.random() * 3, ease: "linear" }}
+  100 |                             className={`absolute w-4 h-4 rounded-sm opacity-80 ${['bg-yellow-400', 'bg-pink-500', 'bg-cyan-400', 'bg-white'][Math.floor(Math.random() * 4)]}`}
+> 101 |                             style={{ left: Math.random() * 100 + '%' }}
+      |                                            ^^^^^^^^^^^^^ Cannot call impure function
+  102 |                         />
+  103 |                     ))}
+  104 |                 </div>                                                                                                                                                              react-hooks/purity
+
+D:\WebDev Projects\Imposter\src\components\RoleReveal.jsx
+   6:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                no-unused-vars
+  14:41  error  React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render  react-hooks/rules-of-hooks
+  27:11  error  'bgColor' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                      no-unused-vars
+  29:11  error  'accentColor' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                  no-unused-vars
+
+D:\WebDev Projects\Imposter\src\components\ui\button.jsx
+  55:18  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+D:\WebDev Projects\Imposter\src\context\GameContext.jsx
+   7:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react-refresh/only-export-components
+  21:7   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  19 |
+  20 |     if (roomId) {
+> 21 |       setLoading(true);
+     |       ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  22 |       const unsubscribe = subscribeToRoom(roomId, (data, err) => {
+  23 |
+  24 |  react-hooks/set-state-in-effect
+
+Γ£û 30 problems (30 errors, 0 warnings)
+

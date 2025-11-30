@@ -1,6 +1,6 @@
-# Imposter Game 🕵️‍♂️
+# Party Heist! 🕵️‍♂️
 
-**Imposter** is a real-time social deduction game built for the web. Gather your friends, join a room, and try to find out who among you is the Imposter—or bluff your way to victory if it's you!
+**Party Heist!** is a real-time social deduction game built for the web. Gather your friends, join a room, and try to find out who among you is the Imposter—or bluff your way to victory if it's you!
 
 ![Game Screenshot](assets/ScreenshotV2.png)
 

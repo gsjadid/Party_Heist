@@ -20,7 +20,7 @@ export default defineConfig({
         name: 'Party Heist!',
         short_name: 'Party Heist',
         description: 'A party game of deception and deduction.',
-        theme_color: '#ffffff',
+        theme_color: '#1e1b4b',
         icons: [
           {
             src: 'pwa-192x192.png',
